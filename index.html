@@ -1,68 +1,69 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Corso di programmazione</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/dracula.css">
+	<title>Corso di programmazione</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h2 class="r-fit-text">Benvenuti</h2>
-					<p>al corso di programmazione</p>
-					<em>per i ragazzi della 2C</em></section>
-				<section>Oggi svilupperemo il nostro <strong>videogioco</strong></section>
-				<section>
-					<p>Il protagonista sará <strong>Dino</strong>, il nostro amico dinosauro</p>
-					<img data-src="assets/dino.svg"/>
-				</section>
-				<section>
-					<p>A Dino piace molto correre per la <strong>prateria</strong></p>
-					<img data-src="assets/sfondo.svg"/>
-				</section>				
-				<section>
-					<p>Ma non si aspettava <em>tutti questi piccoli ricci</em> che sonnecchiano</p>
-					<img data-src="assets/riccio1.svg"/>
-					<img data-src="assets/riccio2.svg"/>
-					<img data-src="assets/riccio3.svg"/>					
-				</section>
-				<section data-transition="zoom">
-					Aiuta Dino a correre per la prateria evitando di disturbare i ricci e soprattutto
-					di farsi male ai piedini!
-					<img data-src="assets/gioco1.png" />
-				</section>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/dracula.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2 class="r-fit-text">Benvenuti</h2>
+				<p>al corso di programmazione</p>
+				<em>per i ragazzi delle classi seconde</em>
+			</section>
+			<section>Oggi svilupperemo il nostro <strong>videogioco</strong></section>
+			<section>
+				<p>Il protagonista sará <strong>Dino</strong>, il nostro amico dinosauro</p>
+				<img data-src="assets/dino.svg" />
+			</section>
+			<section>
+				<p>A Dino piace molto correre per la <strong>prateria</strong></p>
+				<img data-src="assets/sfondo.svg" />
+			</section>
+			<section>
+				<p>Ma non si aspettava <em>tutti questi piccoli ricci</em> che sonnecchiano</p>
+				<img data-src="assets/riccio1.svg" />
+				<img data-src="assets/riccio2.svg" />
+				<img data-src="assets/riccio3.svg" />
+			</section>
+			<section data-transition="zoom">
+				Aiuta Dino a correre per la prateria evitando di disturbare i ricci e soprattutto
+				di farsi male ai piedini!
+				<img data-src="assets/gioco1.png" />
 				<section data-visibility="uncounted">
-					  <iframe class="r-stretch" data-src="assets/game/index.html"></iframe>
+					<iframe class="r-stretch" data-src="assets/game/index.html"></iframe>
 				</section>
-				<section>
-					<h2 class="r-fit-text">INIZIAMO</h2>
-				</section>
-			</div>
+			</section>
+			<section>
+				<h2 class="r-fit-text">INIZIAMO</h2>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			dependencies: [
+				{ src: 'plugin/mouse-pointer/mouse-pointer.js', async: true },
+			]
+		});
+	</script>
+</body>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
 </html>
